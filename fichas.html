@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina de Administracion</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="./css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="./css/adminlte.min.css">
+</head>
+<body class="hold-transition light-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper">
+
+  <!-- MENU HORIZONTAL - IZQUIERDA-->
+  <nav class="main-header navbar navbar-expand navbar-dark">
+    <!-- Lita de elemento del munu hotizon -->
+    <ul class="navbar-nav">
+       <!-- 1.ICONO-MENU-HAMBURGUESA -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <!-- 2. Boton inicio -->
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="./index.html" class="nav-link">Inicio</a>
+      </li>
+      <!-- Puedes seguir poniendo mas botones par el munu horizontal -->
+    </ul>
+
+    <!-- MENU HORIZONTAL - DERECHA-->
+    <ul class="navbar-nav ml-auto">
+      
+      <!--ICONO DE MENSAJES -  Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <!-- icono de mensaje -->
+        <a class="nav-link d-none" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="./img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Admin-Galambo
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Quiero eliminar el pedido XXXX de la pagina</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i>Hace 4h</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  User-Pizza-Place
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Tenemos Problema con el sistema de facturacion</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i>Hace 4h</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="./img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  User-Martinez
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Hemos facturado un 30% mas de lo que teniamos</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> Hace 3h</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">Ver todos los mensajes</a>
+        </div>
+      </li>
+
+      <!-- Notificaciones Dropdown Menu -->
+      <li class="nav-item dropdown d-none">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">4</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">4 Notificationes sin leer</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 mesages nuevos
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">Ver todas las Notificaciones</a>
+        </div>
+      </li>
+      <!-- icono-pantalla-completa -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.MENU HORIZONTAL - FIN -->
+
+  <!-- Main Sidebar Container -->
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="./index.html" class="brand-link">
+        <img src="./img/escudo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <small class="brand-text font-weight-light fw-bold text-wrap">Ministerio de Justicia, Culto y Derechos humanos</small>
+      </a>
+  
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-5 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="./img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">username</a>
+          </div>
+        </div>
+  
+        <!-- Sidebar Menu -->      
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-list"></i>
+                <p>
+                  Registro de Personal
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-address-book"></i>
+                    <p>Nuevo Registro</p>
+                  </a>
+                </li>
+  
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>Lista Completa</p>
+                  </a>
+                </li>  
+              </ul>
+            </li>
+            <dir class="border-bottom"></dir>       
+          </ul>        
+        </nav>
+        <!-- /.sidebar-menu -->
+        <div>
+          <a href="#" class="nav-link d-flex">
+            <i class="nav-icon fa fa-user"></i>
+            <p class="mx-2">
+              Cuenta
+            </p>
+          </a>
+        </div>
+      </div>
+      <!-- /.sidebar -->
+      
+    </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="text-center">
+            <h3 class="m-0">REGISTRO CENTRAL DE FUNCIONARIOS</h3>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Info boxes -->
+        <div class="row">
+        </div>
+        <!-- /.row -->
+
+        <!-- Main row - Cantiene las tablas de resumen-->
+        <div class="row">
+          <!-- COMPRAS RECIEN REALIZADAS -->
+          <div class="card mx-2">
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table m-0">
+                  <thead>
+                  <tr>
+                    <th>Nº. Reg.</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Destino</th>
+                    <th>Funcion</th>
+                    <th>Direccion</th>
+                  </tr>
+                  </thead>
+                  
+                  <tbody>
+                  <tr>
+                    <td><a href="./factura.html">OR1</a></td>
+                    <td>Pizza Margarita</td>
+                    <td>Galambo</td>
+                    <td><span class="badge badge-success">Comprado</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">Lunes-22-1-2024</div>
+                    </td>
+                  </tr>                  
+                  <tr>
+                    <td><a href="./factura.html">OR2</a></td>
+                    <td>Arroz Con Pollo</td>
+                    <td>Pizza Place</td>
+                    <td><span class="badge badge-warning">Pendiente</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">Lunes-22-1-2024</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a href="./factura.html">OR3</a></td>
+                    <td>Burger King - Doble Queso</td>
+                    <td>La Bola</td>
+                    <td><span class="badge badge-danger">Cancelado</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">Lunes-22-1-2024</div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.card-footer -->
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!--/. container-fluid -->
+    </section>
+  </div>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <strong>
+      <small>
+        <a href="#">Ministerio de Justicia, Culto y Derechos humanos</a>.
+        Todos los derechos reservados
+      </small>      
+    </strong>
+   
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="plugins/raphael/raphael.min.js"></script>
+<script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard2.js"></script>
+</body>
+</html>

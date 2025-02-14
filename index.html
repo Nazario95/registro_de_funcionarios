@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina de Administracion</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="./css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="./css/adminlte.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/css.css"
+</head>
+<body class="hold-transition light-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<div class="wrapper">
+  
+  <!-- MENU HORIZONTAL - IZQUIERDA-->
+  <nav class="main-header navbar navbar-expand navbar-dark">
+    <!-- Lita de elemento del munu hotizon -->
+    <ul class="navbar-nav">
+       <!-- 1.ICONO-MENU-HAMBURGUESA -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <!-- 2. Boton inicio -->
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="./index.html" class="nav-link">Inicio</a>
+      </li>
+      <!-- Puedes seguir poniendo mas botones par el munu horizontal -->
+    </ul>
+
+    <!-- MENU HORIZONTAL - DERECHA-->
+    <ul class="navbar-nav ml-auto">
+      <!-- icono-pantalla-completa -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.MENU HORIZONTAL - FIN -->
+
+  <!-- Main Sidebar Container -->
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="./index.html" class="brand-link">
+        <img src="./img/escudo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <small class="brand-text font-weight-light fw-bold text-wrap">Ministerio de Justicia, Culto y Derechos humanos</small>
+      </a>
+  
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-5 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="./img/user-solid.svg" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">username</a>
+          </div>
+        </div>
+  
+        <!-- Sidebar Menu -->      
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <!-- Add icons to the links using the .nav-icon class
+                 with font-awesome or any other icon font library -->
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-list"></i>
+                <p>
+                  Registro de Personal
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-address-book"></i>
+                    <p>Nuevo Registro</p>
+                  </a>
+                </li>
+  
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-users"></i>
+                    <p>Lista Completa</p>
+                  </a>
+                </li>  
+              </ul>
+            </li>
+
+            <dir class="border-bottom"></dir>  
+            
+            <li class="nav-item menu-open">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-cog"></i>
+                <p>
+                  Ajustes
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fa fa-user"></i>
+                    <p>Cuenta</p>
+                  </a>
+                </li> 
+              </ul>
+
+            </li>
+
+          </ul>        
+        </nav>
+      </div>
+      <!-- /.sidebar -->      
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="text-center">
+            <h3 class="m-0">REGISTRO CENTRAL DE FUNCIONARIOS</h3>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    
+    <!-- Main content -->
+    <section class="content">
+      <div class="px-2 py-2">
+        <button class="btn bg-success"  data-bs-toggle="modal" data-bs-target="#new-register">Nuevo Registro</button>
+      </div>
+
+      <div class=" overflow-x-xl-hidden">
+        <!-- Tabla de registros de funcionarios-->
+        <div class="row">
+          <!-- Solo tablas -->
+          <div class="col-xl-7 mb-1">
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table m-0">
+                  <thead>
+                  <tr>
+                    <th>Nº. Reg.</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Destino</th>
+                    <th>Funcion</th>
+                    <th>Direccion</th>
+                    <th>Accion</th>
+                  </tr>
+                  </thead>
+
+                  <tbody class="tabla-registros">
+                    <tr>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>-</td>
+                      <td>
+                        <img src="./img/load.svg" alt="">
+                      </td>
+                    </tr> 
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.card-footer -->
+          </div>
+
+          <!-- Solo ficha  -->
+          <div class="card col-xl-4 ficha d-none">
+              <div class="d-flex justify-content-center p-3">
+                <img src="./img/user-solid.svg" class="card-img-top" alt="foto-nazario" style="width: 15rem;">
+              </div>
+              <div class="card-body my-0">
+                <h5 class="card-title text-bold ficha-nombre">NAZARIO MONEBAMA ETOHO NSAHA</h5>                
+              </div>
+              <p class="px-3 text-bold text-success">Activo</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  ESCALA: <span class="text-bold ficha-escala">C1</span> 
+                </li>
+                <li class="list-group-item">
+                  FUNCION: <span class="text-bold ficha-funcion">INFOMRATICO, PUNTO FOCAL DE CNIAPGE</span>
+                </li>
+                <li class="list-group-item">
+                  DIRECCION ACTUAL: <span class="text-bold ficha-direccion">SECRETARIA GENERAL - SECCION ECONOMICA</span> 
+                </li>
+
+                <li class="list-group-item">
+                  DESTINO ACTUAL: <span class="text-bold ficha-destino">BATA-LITORAL</span> 
+                </li>
+
+                <li class="list-group-item">
+                  FECHA DE NOMBRAMIENTO: <span class="text-bold ficha-nombramiento">
+                    10/12/2022
+                  </span> 
+                </li>
+              </ul>
+              <div class="card-body">
+                <!-- --------------Info Contacto-------- -->
+                <p class="text-bold">DATOS DE CONTACTO</p>
+                <ul>
+                  <li>Ubicacion: <span class="ficha-bario text-bold">Argentina, Ela-Nguema</span></li>
+                  <li>Tel: <span class="ficha-tel text-bold">555712824</span></li>
+                  <li>Email: <span class="ficha-email text-bold">nazariomenoficial@gmail.com</span></li>
+                </ul>
+                <!-- --------------Info Academica-------- -->
+                <p class="text-bold">INFORMACION ACADEMICA</p>
+                <ul>
+                  <li>
+                    <span class="ficha-estudio-tipo-nivel">
+                      Tecnico Superior en:
+                      <span class="text-bold ficha-estudio"> Sistemas de Redes Telematicas  
+                        <small class="expediente px-2 bg-success rounded-4" type="button">
+                          Ver
+                        </small>
+                       </span>                     
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="ficha-estudio-tipo-nivel">
+                      Tecnico en:
+                      <span class="ficha-tel text-bold ficha-estudio"> Programacion de Aplicacion Webs 
+                        <small class="px-2 bg-success rounded-4" type="button">
+                          Ver
+                        </small> 
+                      </span>                     
+                    </span>
+                  </li>                    
+                </ul>
+
+                <!-- -------------- Historial de funciones -------- -->
+                <p class="text-bold">HISTORIAL DE FUNCIONES</p>
+                <ul>
+                  <li>
+                    <span>
+                      <span class="ficha-historial-rango-1">
+                        (2022-2024)
+                      </span>
+                      <span class="ficha-historial-funcion-1">
+                        Informatio Oficial
+                      </span>
+                    </span>
+                  </li>
+
+                </ul>
+              </div>
+
+              <div class="px-2 py-2">
+                <button class="btn bg-success btn-actualizar-ficha"  data-bs-toggle="modal" data-bs-target="#new-register">Actualizar Ficha</button>
+              </div>
+
+          </div>         
+        </div>
+        <!-- /.row -->
+      </div><!--/. container-fluid -->
+    </section>
+  </div>
+
+  <!-- Modales#1-formulario-inscripcion -->
+  <div class="modal fade" id="new-register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario de Inscripcion</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+
+            <div class="mb-3">
+              <input type="text" class="form-control nombre" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control apellidos" placeholder="Apellidos">
+            </div>
+            <div class="mb-3">
+              <select id="function" class="form-select mb-2 funcion">
+                <option value="0">Funcion</option>
+                <option>Auxiliar de Justicia</option>
+                <option>Oficial de Justicia</option>
+                <option>Especialista Legal</option>
+                <option>Tecnico</option>
+                <option>Conductor</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="locations">Destino</label>
+              <select id="locations" class="form-select mb-2 destino-provincia">
+                <option value="0">Provincia</option>
+                <option>Bioko Norte</option>
+                <option>Bioko Sur</option>
+                <option>Litoral</option>
+              </select>
+
+              <select id="locations" class="form-select destino-ciudad">
+                <option value="0">Ciudad</option>
+                <option>Malabo</option>
+                <option>Baney</option>
+                <option>Luba</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control escala" placeholder="Escala">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control direccion" placeholder="Direccion">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control destino" placeholder="Destino">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control tipoEstudios" placeholder="Tipo de Estudios">
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control email" placeholder="Correo Electronico">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control estudios" placeholder="Tipo de Estudios">
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control fecha-nombramiento" placeholder="Fecha de Nombramiento">
+            </div>
+
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="save-new">
+            Guardar
+            <img class="d-none load-efx" src="./img/load.svg" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modales#2-ficha funcionario -->
+    <div class="modal fade" id="ficha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ficha del personal</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">  
+
+            <div class="card  ficha">
+              <div class="d-flex  justify-content-center p-3">
+                <img src="./img/user-solid.svg" class="card-img-top" alt="foto-nazario" style="width: 10rem;">
+              </div>
+              <div class="card-body my-0">
+                <h5 class="card-title text-bold">NAZARIO MONEBAMA ETOHO NSAHA</h5>                
+              </div>
+              <p class="px-3 text-bold text-success">Activo</p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  ESCALA: <span class="text-bold">C1</span> 
+                </li>
+                <li class="list-group-item">
+                  FUNCION: <span class="text-bold">INFOMRATICO, PUNTO FOCAL DE CNIAPGE</span>
+                </li>
+                <li class="list-group-item">
+                  DIRECCION ACTUAL: <span class="text-bold">SECRETARIA GENERAL - SECCION ECONOMICA</span> 
+                </li>
+
+                <li class="list-group-item">
+                  DESTINO ACTUAL: <span class="text-bold">BATA-LITORAL</span> 
+                </li>
+
+                <li class="list-group-item">
+                  FECHA DE NOMBRAMIENTO: <span class="text-bold">
+                    10/12/2022
+                  </span> 
+                </li>
+              </ul>
+              <div class="card-body">
+                <!-- --------------Info Contacto-------- -->
+                <p class="text-bold">DATOS DE CONTACTO</p>
+                <ul>
+                  <li>Ubicacion: <span class="ficha-bario text-bold">Argentina, Ela-Nguema</span></li>
+                  <li>Tel: <span class="ficha-tel text-bold">555712824</span></li>
+                  <li>Email: <span class="ficha-email text-bold">nazariomenoficial@gmail.com</span></li>
+                </ul>
+                <!-- --------------Info Academica-------- -->
+                <p class="text-bold">INFORMACION ACADEMICA</p>
+                <ul>
+
+                  <li>
+                    <span class="ficha-estudio-tipo-nivel">
+                      Tecnico Superior en:
+                      <span class="ficha-tel text-bold ficha-estudio"> Sistemas de Redes Telematicas  <small class="px-2 bg-success rounded-4" type="button">Ver</small> </span>                     
+                    </span>
+                  </li>
+
+                  <li>
+                    <span class="ficha-estudio-tipo-nivel">
+                      Tecnico en:
+                      <span class="ficha-tel text-bold ficha-estudio"> Programacion de Aplicacion Webs 
+                        <small class="px-2 bg-success rounded-4" type="button">
+                          Ver
+                        </small> 
+                      </span>                     
+                    </span>
+                  </li>                    
+                </ul>
+
+                <!-- -------------- Historial de funciones -------- -->
+                <p class="text-bold">HISTORIAL DE FUNCIONES</p>
+                <ul>
+                  <li>
+                    <span>
+                      <span class="ficha-historial-rango-1">
+                        (2022-2024)
+                      </span>
+                      <span class="ficha-historial-funcion-1">
+                        Informatio Oficial
+                      </span>
+                    </span>
+                  </li>
+
+                  <li>
+                    <span">
+                      <span class="ficha-historial-rango-1">
+                        (2024-Actualidad)
+                      </span>
+                      <span class="ficha-historial-funcion-1">
+                        Tecnico Contable en la Seccion Economica
+                      </span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <strong>
+      <small>
+        <a href="#">Ministerio de Justicia, Culto y Derechos humanos</a>.
+        Todos los derechos reservados
+      </small>      
+    </strong>
+   
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/popper/popper.min.js" type="module"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="plugins/raphael/raphael.min.js"></script>
+<script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+
+<script type="module" src="./dist/js/app.js"></script>
+</body>
+</html>
