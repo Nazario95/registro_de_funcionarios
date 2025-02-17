@@ -1,3 +1,23 @@
+/* VARIABLES */    
+:root {
+    /* colores */
+	--c-contenedor: #bafaf2;
+    --c-elemnto:00ceb6;
+    --c-btn:#63e6bf6e;
+}
+/* GLOBAL**************** */
+.c-btn{
+    background-color:var(--c-btn);
+    color: rgb(54, 54, 54) !important;
+}
+
+.color-fondo{
+    background-color: var(--c-contenedor);
+    
+}
+/* HEADER**************** */
+
+/* MENU-ASIDE************ */
 .table thead th {
     vertical-align: bottom;
     border: none
