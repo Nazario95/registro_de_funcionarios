@@ -38,11 +38,14 @@ async function cargarPerfilFuncionario(){
                       <td>${funcion}</td>
                       <td>${direccion ? direccion : "Sin Asignacion"}</td>
                       <td>
-                        <span class="c-btn px-1 rounded-1 ver-ficha" type="button" id="${dato.id}" 
-                        ${window.innerWidth < 992 ? 'data-bs-toggle="modal" data-bs-target="#ficha" ' : ""}
-                        >
-                          Ver Ficha
-                        </span>
+                        <div id="${dato.id}" class="ver-ficha">
+                            <span class="c-btn ${window.innerWidth < 992 ? 'px-3 py-2': 'px-1'} rounded-1" type="button" 
+                            ${window.innerWidth < 992 ? ' data-bs-toggle="modal" data-bs-target="#ficha" ' : ""}
+                            >
+                                ${window.innerWidth < 992 ?'<i class="fas fa-eye"></i> ' : "Ver Ficha"}
+                            </span> 
+                        </div>
+                         
                       </td>
                 </tr> 
             ` 
@@ -53,9 +56,10 @@ async function cargarPerfilFuncionario(){
         
         document.querySelectorAll(".ver-ficha").forEach(btnVerFicha=>{
             btnVerFicha.addEventListener("click",(e)=>{
-                // console.log(e.target.id) 
+                // console.log(e.target) 
+                console.log(e.currentTarget.id);
                 //Ver Ficha
-                verFicha(e.target.id)
+                verFicha(e.currentTarget.id)
             })
         })  
     }
@@ -64,6 +68,7 @@ async function cargarPerfilFuncionario(){
 
 //#3 ------------------ VER FICHA
 async function verFicha(idFIcha){
+    console.log(idFIcha)
     idfichaActivo = idFIcha;
     actEdicion(false)
     //modificar id de btn actualizar
@@ -128,9 +133,6 @@ async function verFicha(idFIcha){
     }
     
 }
-
-
-
 
 //------------ GUARDAR NUEVO FUNCIONARIO
     //capturar datos
